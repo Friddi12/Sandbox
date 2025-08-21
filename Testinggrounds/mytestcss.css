@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    height: 1000px;
 }
 
 h1{
@@ -7,13 +8,13 @@ h1{
 }
 
 p{
-    color: azure;
+    color: white;
 }
 
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 20%;
     height: auto;
 }
