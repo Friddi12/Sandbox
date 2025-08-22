@@ -1,5 +1,6 @@
 const button = document.getElementById("colorSwap");
 const mytext = document.getElementById("mytext")
+const myheader = document.getElementById("myheader")
 
 let isBlack = true;
 let clicked = false;
@@ -19,11 +20,13 @@ button.addEventListener("click", () => {
         document.body.style.backgroundColor = "white";
         document.body.style.Color = "black";
         mytext.style.color = "black";
+        myheader.style.color = "silver";
         isBlack = false;
     } else {
         document.body.style.backgroundColor = "black";
         document.body.style.Color = "white";
         mytext.style.color = "white";
+        myheader.style.color = "white";
         isBlack = true;
     }
 })
