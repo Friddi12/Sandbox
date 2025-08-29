@@ -1,16 +1,20 @@
+body {
+    height: 2000px;
+}
+
 .logo{
     margin: 0;
     padding: 0;
     color: black;
 }
 #Tank {
-    height: 64px;
+    height: 64px; /*Høyde til logoen*/
 }
 
 #navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /*Gjør navbar til en flex container*/
+    justify-content: space-between; /*Flytter elementene inni navbar slik at første elementet er til venstre og det siste er til høyre*/
+    align-items: center; /*Sentrerer elementene langs kryssaksen*/
     width: 100%;
     position: fixed;
     top: 0;
@@ -20,6 +24,7 @@
     height: 60px;
     padding: 0 20px;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .nav_links {    
@@ -41,7 +46,7 @@
 }
 
 #container{
-    margin-top: 100px;
+    margin-top: 20px;
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -65,7 +70,6 @@ th {
 #penchart {
     position: relative;
     border: 3px solid black;
-    width: max-content;
     text-align: center;
 
 }
@@ -77,4 +81,50 @@ th {
 .dist {
     background-color: lightslategray;
     font-weight: bold;
+}
+
+#container2 {
+    margin-top: 70px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#penchart2 {
+    position: relative;
+    border: 3px solid black;
+    text-align: center;
+}
+#roundimg2 {
+    transform: rotate(90deg);
+    width: 250px;
+    height: 250px;
+}
+
+#penchart, #penchart2 {
+    width: 350px;
+    background-color: silver;
+}
+
+#wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+#testarti, #testarti2  {
+    width: 100%;
+}
+
+#testtext, #testtext2 {
+    color: black;
+}
+
+
+#wrapper2 {
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+    margin-top: 50px;
 }
