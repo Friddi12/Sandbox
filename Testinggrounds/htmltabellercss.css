@@ -1,0 +1,37 @@
+#container{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+table {
+    width: 100%;
+    align-items: center;
+    border-collapse: collapse;
+    font-family: Arial;
+    margin: 0 auto;
+} 
+th, td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: left;
+}
+th {
+    background-color: lightslategray;
+}
+
+#penchart {
+    position: relative;
+    border: 3px solid black;
+    width: max-content;
+    text-align: center;
+
+}
+#roundimg {
+    width: 250px;
+    height: 300px;
+}
+
+.dist {
+    background-color: lightslategray;
+    font-weight: bold;
+}
