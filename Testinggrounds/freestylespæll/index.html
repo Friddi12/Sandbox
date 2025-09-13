@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="spaell.css">
+    <link rel="stylesheet" href="CSS/stylingbutikk.css">
     <title>Forside - Dataspæll</title>
   </head>
   <body>
+
+    <!--HEADER/NAVIGASJONS MENY-->
   
-    <header>
-      <a href="index.html">DataSpæll</a>
+    <header id="globalheader">
+      <a href="index.html" id="mainlogo">DataSpæll</a>
       <nav>
         <ul>
           <li><a href="index.html">HJEM</a></li>
@@ -18,49 +20,58 @@
       </nav>
     </header>
 
-    <section id="herosection">
+    <!--HERO SECTION-->
+
+    <section class="herosection">
       <h2>Her er Deals</h2>
-      <img src="https://fastly.picsum.photos/id/314/200/300.jpg?grayscale&hmac=9jK9uuaMPwpYI59rsIPDUHyRBpXqwtu1YXqldZbd9fY" alt="">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <a href="deals.html">Se tilbud</a>
+      <img src="" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lobortis sapien. Nam finibus ultrices</p>
+      <a class="btn" href="deals.html">Se tilbud</a>
     </section>
 
+    <!--HOVEDINNHOLD-->
+
     <main>
-      <section>
+
+      <!--PRODUKTKORTENE-->
+
+      <section class="productdisplay">
         <h2>Populære Spill</h2>
-        <article>
-          <img src="https://fastly.picsum.photos/id/314/200/300.jpg?grayscale&hmac=9jK9uuaMPwpYI59rsIPDUHyRBpXqwtu1YXqldZbd9fY" alt="Farming simulator 2025">
+        <article class="prodcard">
+          <img src="https://www.outland.no/media/catalog/product/cache/ab0d362431b8ede7989b9ba1a279c0de/p/n/png_4064635510507__5865d05f4537bc657463ccd3e0e63d16.jpg" alt="Farming simulator 2025">
           <h3>Farming Simulator 2025</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <p>kr 499</p>
-          <a href="">Legg i Vogn</a>
+          <a href="" class="seprod">Se Produkt</a>
         </article>
 
-        <article>
-          <img src="https://fastly.picsum.photos/id/314/200/300.jpg?grayscale&hmac=9jK9uuaMPwpYI59rsIPDUHyRBpXqwtu1YXqldZbd9fY" alt="Ready or not">
+        <article class="prodcard">
+          <img src="https://m.media-amazon.com/images/M/MV5BMjRiYWNkOGEtOTg1Mi00NmRhLWE4MDgtZTQwNTUyOTQ5YmIxXkEyXkFqcGc@._V1_.jpg" alt="Ready or not">
           <h3>Ready or Not</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <p>kr 499</p>
-          <a href="">Legg i Vogn</a>
+          <a href="product.html" class="seprod">Se Produkt</a>
         </article>
 
-        <article>
-          <img src="https://fastly.picsum.photos/id/314/200/300.jpg?grayscale&hmac=9jK9uuaMPwpYI59rsIPDUHyRBpXqwtu1YXqldZbd9fY" alt="Worms Armageddon">
+        <article class="prodcard">
+          <img src="https://i1.sndcdn.com/artworks-Q0OypfGsxWwmsgnb-WBiBTw-t500x500.jpg" alt="Worms Armageddon">
           <h3>Worms Armageddon</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <p>kr 499</p>
-          <a href="">Legg i Vogn</a>
+          <a href="" class="seprod">Se Produkt</a>
         </article>
 
-        <article>
-          <img src="https://fastly.picsum.photos/id/314/200/300.jpg?grayscale&hmac=9jK9uuaMPwpYI59rsIPDUHyRBpXqwtu1YXqldZbd9fY" alt="Metal Gear Solid Delta: Snake Eater">
+        <article class="prodcard">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjI4QhaOOnUjO-EjQ7B-kFEyPX5R3cGdR-ZA&s" alt="Metal Gear Solid Delta: Snake Eater">
           <h3>Metal Gear Solid DELTA: Snake Eater</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <p>kr 499</p>
-          <a href="">Legg i Vogn</a>
+          <a href="" class="seprod">Se Produkt</a>
         </article>
       </section>
-      <section>
+
+
+      <section id="categories">
         <h2>Kategorier</h2>
         <article>
           <h3><a href="nintendo.html">Nintendo</a></h3>
@@ -80,7 +91,7 @@
       </section>
     </main>
 
-    <aside>
+    <aside class="sidecontainer">
       <h4>Bli med i Spæll-klubben</h4>
       <p>Lorem ipsum dolor sit amet</p>
       <form>
@@ -89,22 +100,16 @@
           <input type="email" placeholder="navn@epost.no">
         </label>
 
-        <input type="submit" value="Meld meg på">
+        <input class="btn" type="submit" value="Mel meg på">
 
-        <label for="agecert">Over 18 år</label>
+        <label class="agecheck" for="agecert">Over 18 år
         <input type="checkbox" id="agecert">
+        </label>
       </form>
+       
     </aside>
 
-    <footer>
-      <h2>Kontakt Oss!</h2>
-      <ul>
-        <li><a href="https://x.com/">Vår Twitter</a></li>
-        <li><a href="https://www.instagram.com/">Vår Instagram</a></li>
-        <li><a href="https://m.facebook.com/">Vår Facebook</a></li>
-      </ul>
-      <p>©2025 DataSpæll services AS. All rights reserved</p>
-    </footer>
+    <footer>Min Tøffe nettside©</footer>
 
   </body>
 </html>
