@@ -97,6 +97,100 @@ footer {
     background-color: gray;
 }
 
+
+section{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    #circle-div {
+        position: relative;
+
+        border-radius: 50%;
+        background: blue;
+
+        width: 100px;
+        height: 100px;
+
+        #inner-circle-div{
+            position: relative;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+
+            width: 90px;
+            height: 90px;
+
+            animation-name: circle-spin;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    }
+}
+
+
+@keyframes circle-spin {
+    10%{
+        left: 0px;
+        top: 0px;
+    }
+
+    20%{
+        left: 20px;
+        top: 0px;
+    }
+
+    30%{
+        left: 20px;
+        top: 20px;
+    }
+
+    40%{
+        left: 0px;
+        top: 20px;
+    }
+
+    50%{
+        left: 0px;
+        top: 0px;
+    }
+    60%{
+        left: 0px;
+        top: 0px;
+    }
+
+    70%{
+        left: 20px;
+        top: 0px;
+    }
+
+    80%{
+        left: 20px;
+        top: 20px;
+    }
+
+    90%{
+        left: 0px;
+        top: 20px;
+    }
+
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*MEDIA QUERIES*/
 
 @media only screen and (max-width: 600px) {
